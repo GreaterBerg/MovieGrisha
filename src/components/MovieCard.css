@@ -1,0 +1,79 @@
+.movie-card {
+    position: relative;
+    margin: .3rem;
+    width: 9em;
+    height: 13.5em;
+    border-radius: .3rem;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-card-hover {
+    border-radius: .3rem;
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(235, 235, 235, 0.8);
+    transition: all .1s ease;
+    color: #4b4b4b;
+}
+
+.character-title {
+    position: absolute;
+    padding: .5rem;
+    left: 0;
+    top: 0;
+}
+
+.list-title {
+    position: absolute;
+    padding: .5rem;
+    left: 0;
+    bottom: 0;
+}
+
+.movie-card-hover li{
+    cursor: pointer;
+    list-style: none;
+}
+
+.movie-card-hover:hover {
+    /* .movie-card-hover {
+        display: flex;
+        flex-direction: column;
+    } */
+    opacity: 1;
+}
+
+.poster-null {
+    position: absolute;
+    text-align: center;
+    padding: 1rem;
+    color: rgb(43, 42, 42);
+}
+
+.skeleton-poster, .skeleton-title {
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+@media (max-width: 700px) {
+    .movie-card {
+        width: 6rem;
+        height: 9.5rem;
+    }
+}

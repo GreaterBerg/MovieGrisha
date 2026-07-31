@@ -1,0 +1,10 @@
+
+.front-text {
+    margin: 1rem;
+}
+
+.movie-image {
+    background-color: rgba(235, 235, 235, 0.8);
+    border-radius: .2rem;
+    margin: .3rem .5rem 0 0;
+}

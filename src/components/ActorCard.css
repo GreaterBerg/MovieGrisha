@@ -1,0 +1,36 @@
+
+.actor-card-container {
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.actor-card {
+    width: 15rem;
+    height: 20rem;
+    background-size: cover;
+    border-radius: .5rem;
+}
+
+.biography-container {
+    margin: 0 1rem;
+    width: 50rem;
+}
+
+
+@media (max-width: 1024px) {
+    .actor-card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .biography-container {
+        width: 20rem;
+        margin: 1rem;
+    }
+}

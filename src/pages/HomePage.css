@@ -1,0 +1,50 @@
+/* 
+section {
+    width: 60rem;
+} */
+
+.section-list {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.upcoming {
+    display: flex;
+    overflow-x: auto;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 25%,
+        black 85%,
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 15%,
+        black 85%,
+        transparent 100%
+    );
+}
+.upcoming::-webkit-scrollbar {
+    display: none;
+}
+
+.upcoming-list {
+    animation: spin 90s infinite linear;
+    display: flex;
+    padding-right: .3rem;
+    
+}
+
+.movie-card {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}

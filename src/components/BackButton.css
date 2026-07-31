@@ -1,0 +1,20 @@
+
+
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 7rem;
+    height: 2rem;
+    margin: 1rem;
+    border: none;
+    background-color: var(--bg-w);
+    color: var(--text-o);
+    transition: all .1s ease 0s;
+}
+.back-button:hover {
+    cursor: pointer;
+    color: var(--text-b);
+    background-color: var(--bg-g);
+}
