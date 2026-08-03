@@ -36,11 +36,11 @@ const SearchPage = () => {
                 ) : errorMessage ? (
                     <p className="error">{errorMessage}</p>
                 ) : (
-                    <ul className="popular-list">
+                    <div className="popular-list">
                         {movieData.map((movie) => (
                             <MovieCard key={movie.id} title={movie.title} poster={movie.poster_path} id={movie.id}/>
                         ))}
-                    </ul>
+                    </div>
                 )}
 
             </section>
