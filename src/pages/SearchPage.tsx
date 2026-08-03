@@ -23,7 +23,7 @@ const SearchPage = () => {
                     autoFocus={true}
                     type='text'
                     placeholder='Search'
-                    className='search'
+                    className='search sharp'
                     value={searchMovie}
                     onChange={e => (setSearchMovie(e.target.value))}
                 />
