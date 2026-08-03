@@ -1,5 +1,6 @@
 
 nav {
+    padding: .5rem;
     border-bottom: var(--bg-section) solid 1px;
     margin: 0 1rem 0 1rem;
     display: flex;
@@ -8,18 +9,27 @@ nav {
 }
 
 .nav-list {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .logo {
-    color: var(--text);
+    text-align: center;
+    font-size: .9rem;
+    padding: .5rem 1rem;
+    background-color: var(--bg-w);
+    color: var(--text-o);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .item {
+    text-align: center;
+    width: 10rem;
+    padding: .5rem;
+    background-color: var(--bg-g);
     margin-left: 1rem;
     color: var(--text);
     text-decoration: none;
