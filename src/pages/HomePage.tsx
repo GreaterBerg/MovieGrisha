@@ -24,7 +24,9 @@ const HomePage = () => {
                                 {Array.from({ length: 10 }).map((i:number) => <MovieCardSkeleton key={i} />)}
                             </div>
                         ) : upcomingError ? (
-                            <p className="error-text">{errorTopRated}</p>
+                            <div className="upcoming-list">
+                                {Array.from({ length: 10 }).map((i:number) => <MovieCardSkeleton key={i} />)}
+                            </div>
                         ) : (
                             <div className="upcoming-list">
                                 {upcomingData.map((movie) => {
@@ -54,7 +56,9 @@ const HomePage = () => {
                         {Array.from({ length: 20 }).map((i:number) => <MovieCardSkeleton key={i} />)}
                     </ul>
                 ) : errorTopRated ? (
-                    <p className="error-text">{errorTopRated}</p>
+                    <ul className="section-list">
+                        {Array.from({ length: 20 }).map((i:number) => <MovieCardSkeleton key={i} />)}
+                    </ul>
                 ) : (
                     <ul className="section-list top-rated-list">
                         {topRatedData.map((movie) => {
@@ -71,7 +75,9 @@ const HomePage = () => {
                         {Array.from({ length: 20 }).map((i:number) => <MovieCardSkeleton key={i} />)}
                     </ul>
                 ) : errorMessage ? (
-                    <p className="error-text">{errorMessage}</p>
+                    <ul className="section-list">
+                        {Array.from({ length: 20 }).map((i:number) => <MovieCardSkeleton key={i} />)}
+                    </ul>
                 ) : (
                     <ul className="section-list now-playing-list">
                         {movieData.map((movie) => {

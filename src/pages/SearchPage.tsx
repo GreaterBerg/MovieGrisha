@@ -34,7 +34,9 @@ const SearchPage = () => {
                         {Array.from({ length: 20 }).map((i:number) => <MovieCardSkeleton key={i} />)}
                     </div>
                 ) : errorMessage ? (
-                    <p className="error">{errorMessage}</p>
+                    <div className="popular-list">
+                        {Array.from({ length: 20 }).map((i:number) => <MovieCardSkeleton key={i} />)}
+                    </div>
                 ) : (
                     <div className="popular-list">
                         {movieData.map((movie) => (
