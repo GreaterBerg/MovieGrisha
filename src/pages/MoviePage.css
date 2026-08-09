@@ -1,158 +1,3 @@
-/* .main-container {
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.title-score-container {
-    padding: .5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.title-movie {
-    width: 30rem;
-    line-height: 3rem;
-    margin: 0 0 1rem 0;
-}
-
-.director-container {
-    width: 20rem;
-    display: flex;
-    margin-bottom: 1rem;
-}
-
-.director {
-    margin-left: 1rem;
-}
-
-.title-date {
-    padding: .5rem 0 0 .5rem;
-}
-
-.genres-container {
-    margin: 0;
-    display: flex;
-    padding: 0 0 0 .5rem;
-    gap: 1rem;
-}
-
-.score {
-    color: #4040f7;
-    font-weight: 800;
-}
-
-.movie-details-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.more-details-container {
-    display: flex;
-    flex-direction: column;
-    padding: 0 2rem ;
-}
-
-.side-title {
-    font-weight: 600;
-    color: var(--text-h);
-}
-
-.movie-poster {
-    border-radius: .35rem;
-}
-
-.logo-company {
-    margin: .1rem;
-    border-radius: .1rem;
-    padding: 1rem;
-    background-color: rgb(232, 232, 232);
-    width: 3rem;
-}
-
-.buttons-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    margin: 1rem 1rem 0 1rem;
-    gap: .5rem;
-}
-
-.movie-btn {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    background-color: #a7a7ce;
-    color: white;
-    padding: 1rem;
-    width: 100%;
-    height: 2rem;
-    border-radius: 1rem;
-    transition: all .2s ease 0s;
-}
-
-.movie-btn:hover {
-    background-color: #4040f7;
-}
-
-.overview-movie {
-    width: 30rem;
-}
-
-.tagline {
-    font-weight: 300;
-    text-transform: uppercase;
-    font-style: italic;
-    margin: .5rem 0 1rem 0;
-}
-
-
-.crew-container {
-    width: 30rem;
-    display: flex;
-}
-
-.actors-container {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 3rem 0 0;
-}
-
-.Link {
-    text-decoration: none;
-}
-.Link:hover {
-    text-decoration:underline;
-}
-
-.actor {
-    text-decoration: non;
-    color: rgb(51, 51, 51);
-    padding: .1rem;
-}
-
-.actor-character {
-    color: rgb(136, 136, 136);
-    font-size: 14px;
-}
-
-.companies-container {
-    margin-top: 1rem;
-}
-
-.company {
-    padding: .1rem;
-}
-
-.movie-poster {
-    width: 20em;
-    height: 30em;
-    background-size: cover;
-} */
 
 .upcase {
     font-size: .6rem;
@@ -335,6 +180,7 @@
 }
 
 .director-container {
+    min-height: 5rem;
     line-height: .7rem;
     margin-bottom: 1rem;
     text-decoration: none;
@@ -347,6 +193,7 @@
 }
 
 .director-image {
+    background-color: var(--bg-w);
     margin: .5rem;
     width: 5rem;
     border-radius: 1rem;
@@ -357,6 +204,7 @@
 }
 
 .backdrop-container {
+    background-color: var(--bg-g);
     min-height: 50vh;
     position: relative;
     background-size: cover;

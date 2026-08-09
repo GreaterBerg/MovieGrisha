@@ -35,91 +35,10 @@ const MoviePage = () => {
     return (
         <>
             <NavBar />
-            {/* <div className="main-container">
-                <div className="title-score-container">
-                    <div className="title-genres">
-                        {isLoading ? null : (
-                            <p className="title-date">{movieData.release_date?.slice(0,4)}</p>)}
-
-                        <h1 className="title-movie">{movieData.title}</h1>
-                        { isLoading ? (
-                            <p className="loading-text">loading...</p>
-                        ) : errorMessage ? (
-                            <p className="error-text">{errorMessage}</p>
-                        ) : (
-                            <ul className="genres-container">
-                                {movieData.genres?.map( (genre) => (
-                                    <p className="genre" key={genre.id}>{genre.name}</p>
-                                ))}
-                            </ul>
-                        ) }
-
-                    </div>
-                    <span className="title-score"><span className="score">{movieData.vote_average}</span> /10</span>
-                </div>
-                <div className="movie-details-container">
-                        <div className="movie-poster" style={styles}>{null}</div>
-                        <div className="more-details-container">
-                            <div className="overview-movie">
-                                <div className="director-container">
-                                    <p className="side-title">Director:</p>
-                                    {crewLoading ? (
-                                        <p className="loading-text" style={{margin: '1rem', marginTop: '0'}}>Loading...</p>
-                                    ) : crewErrorMessage ? (
-                                        <p className="error-text">{crewErrorMessage}</p>
-                                    ) : 
-                                        crew?.map((dude) => {
-                                            if (dude.job === "Director") {
-                                                return (
-                                                    <p key={dude.id} className="director">{dude.name}</p>
-                                                )
-                                            }
-                                        }
-                                    )}
-                                </div>
-                                <p className="tagline">{movieData.tagline}</p>
-                                <p className="side-title">About the Movie</p>
-                                <p className="overview">{movieData.overview}</p>
-                            </div>
-                            <div className="crew-container">
-                                <div className="actors-container">
-                                    <p className="side-title">Actors:</p>
-                                    {crewLoading ? (
-                                        <p className="loading-text" style={{margin: '1rem', marginTop: '0'}}>Loading...</p>
-                                    ) : crewErrorMessage ? (
-                                        <p className="error-text">{crewErrorMessage}</p>
-                                    ) : (
-                                        cast?.slice(0,5).map((dude) => (
-                                            <Link to={`/actor/${dude.id}`} className="Link">
-                                                <span key={dude.id} className="actor">{dude.name} <span className="actor-character">{dude.character}</span></span>
-                                            </Link>
-                                        ))
-                                    )}
-                                </div>
-                                <div className="companies-container">
-                                    <p className="side-title">Production:</p>
-                                    { isLoading ? (
-                                        <p className="loading-text">loading...</p>
-                                    ) : errorMessage ? (
-                                        <p className="error-text">{errorMessage}</p>
-                                    ) : (movieData.production_companies?.slice(0,5).map( (company) => (
-                                            <p className="company" key={company.id}>{company.name}</p>
-                                        ))) 
-                                    }
-                                </div>
-                            </div>
-                            <div className="buttons-container">
-                                <Link to={`/movie/${movieId}/player`} className="movie-btn">Watch</Link>
-                                <Link to={`/movie/${movieId}/images`} className="movie-btn">Images</Link>
-                            </div>
-                        </div>
-                </div>
-            </div> */}
             <div className="page-container">
                 <div className="all-overview-container">
                     <div className="second-info-container">
                         <div className="trailer-container sharp" style={styleTrailer}>
-                            {/* <p className="trailer-btn">Play Trailer</p> */}
                             { officialTrailer ? (
                                 <a href={`https://www.youtube.com/watch?v=${officialTrailer.key}`} className="sharp trailer-btn" target="_blank">Play Trailer</a>
                             ) : trailer ? (
@@ -165,10 +84,6 @@ const MoviePage = () => {
                                 )}
                             </div>
                             <div className="time-director-container">
-                                {/* <div className="bubble-container time borderer sharp">
-                                    <p className="runtime">{movieData.runtime}</p>
-                                    <p className="upcase">minutes runtime</p>
-                                </div> */}
                                 {director && (
                                     <Link to={`/director/${director.id}`} className="bubble-container director-container borderer sharp">
                                         <img className="director-image" src={`https://image.tmdb.org/t/p/w500/${director.profile_path}`} alt="director" aria-label="director image" />
