@@ -1,7 +1,7 @@
 
 nav {
     padding: .5rem;
-    border-bottom: var(--bg-section) solid 1px;
+    border-bottom: var(--bg-g) solid 1px;
     margin: 0 1rem 0 1rem;
     display: flex;
     justify-content: space-between;
@@ -16,22 +16,33 @@ nav {
 }
 
 .logo {
+    background-color: var(--bg-w);
+    border-radius: .5rem;
     text-align: center;
     font-size: .9rem;
-    padding: .5rem 1rem;
-    background-color: var(--bg-w);
-    color: var(--text-o);
+    padding: .3rem 1rem;
+    color: var(--bg-g);
     text-decoration: none;
     font-weight: 400;
+    transition: all .15s ease 0s;
+}
+.logo:hover {
+    background-color: var(--bg-g);
+    color: var(--bg-w);
 }
 
 .item {
+    display: flex;
+    justify-content: center;
+    gap: .4rem;
     text-align: center;
     width: 10rem;
-    padding: .5rem;
-    background-color: var(--bg-g);
+    padding: .3rem;
     margin-left: 1rem;
     color: var(--text);
     text-decoration: none;
     font-weight: 400;
+}
+.item:hover {
+    color: var(--bg-w);
 }
