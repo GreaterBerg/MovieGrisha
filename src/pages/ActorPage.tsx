@@ -26,7 +26,7 @@ const ActorPage = () => {
                 ) : (
                     <ul className="section-list">
                         {MoviesData.map((movie) => {
-                            return (<MovieCard key={movie.id} poster={movie.poster_path} title={movie.title} id={movie.id} actor={movie.character}/>) 
+                            return (<MovieCard key={movie.id} poster={movie.poster_path} title={movie.title} id={movie.id} actor={movie.character} rating={movie.vote_average.toFixed(1)} />) 
                         }
                         )}
                     </ul>

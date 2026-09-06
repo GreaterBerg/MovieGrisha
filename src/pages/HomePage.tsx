@@ -30,7 +30,7 @@ const HomePage = () => {
                         ) : (
                             <div className="upcoming-list">
                                 {upcomingData.map((movie) => {
-                                    return (<MovieCard key={movie.id} poster={movie.poster_path} title={movie.title} id={movie.id}/>) 
+                                    return (<MovieCard key={movie.id} poster={movie.poster_path} title={movie.title} id={movie.id} rating={movie.vote_average.toFixed(1)} />) 
                                 }
                                 )}
                             </div>
@@ -42,7 +42,7 @@ const HomePage = () => {
                         ) : (
                             <div aria-hidden className="upcoming-list">
                                 {upcomingData.map((movie) => {
-                                    return (<MovieCard key={movie.id} poster={movie.poster_path} title={movie.title} id={movie.id}/>) 
+                                    return (<MovieCard key={movie.id} poster={movie.poster_path} title={movie.title} id={movie.id} rating={movie.vote_average.toFixed(1)} />) 
                                 }
                                 )}
                             </div>
@@ -62,7 +62,7 @@ const HomePage = () => {
                 ) : (
                     <ul className="section-list top-rated-list">
                         {topRatedData.map((movie) => {
-                            return (<MovieCard key={movie.id} poster={movie.poster_path} title={movie.title} id={movie.id}/>) 
+                            return (<MovieCard key={movie.id} poster={movie.poster_path} title={movie.title} id={movie.id} rating={movie.vote_average.toFixed(1)} />) 
                         }
                         )}
                     </ul>
@@ -81,7 +81,7 @@ const HomePage = () => {
                 ) : (
                     <ul className="section-list now-playing-list">
                         {movieData.map((movie) => {
-                            return (<MovieCard key={movie.id} poster={movie.poster_path} title={movie.title} id={movie.id}/>) 
+                            return (<MovieCard key={movie.id} poster={movie.poster_path} title={movie.title} id={movie.id} rating={movie.vote_average.toFixed(1)} />) 
                         }
                         )}
                     </ul>

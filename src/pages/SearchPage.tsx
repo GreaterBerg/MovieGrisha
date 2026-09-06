@@ -40,7 +40,7 @@ const SearchPage = () => {
                 ) : (
                     <div className="popular-list">
                         {movieData.map((movie) => (
-                            <MovieCard key={movie.id} title={movie.title} poster={movie.poster_path} id={movie.id}/>
+                            <MovieCard key={movie.id} title={movie.title} poster={movie.poster_path} id={movie.id} rating={movie.vote_average.toFixed(1)} />
                         ))}
                     </div>
                 )}

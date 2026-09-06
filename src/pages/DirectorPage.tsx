@@ -27,7 +27,7 @@ const DirectorPage = () => {
                     <ul className="section-list">
                         {MoviesData.map((movie) => {
                             if (movie.job === "Director") {
-                                return (<MovieCard key={movie.id} poster={movie.poster_path} title={movie.title} id={movie.id} />) 
+                                return (<MovieCard key={movie.id} poster={movie.poster_path} title={movie.title} id={movie.id} rating={movie.vote_average.toFixed(1)} />) 
                             }
                         }
                         )}
