@@ -38,7 +38,7 @@
 .trailer-container:hover {
     cursor: pointer;
     .trailer-btn {
-        text-decoration: underline;
+        border-bottom: 3px solid var(--bg-section);
     }
 }
 
