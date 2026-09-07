@@ -136,15 +136,19 @@
 }
 
 .actor {
+    line-height: .5rem;
+    font-size: .9rem;
     font-weight: 300;
     color: var(--text);
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px solid var(--text);
     padding: .1rem;
     transition: all .1s ease 0s;
 }
 .actor:hover {
     cursor: pointer;
     color: var(--text-b);
+    border-bottom: 1px solid var(--text-b);
 }
 
 .time-director-container {
@@ -218,7 +222,7 @@
 }
 
 .watch {
-    font-weight: 500;
+    font-weight: 400;
     font-size: .8rem;
     background-color: var(--bg-w);
     padding: .5rem 1rem;
@@ -249,4 +253,8 @@
     .director-image {
         width: 3rem;
     }
+}
+
+.Link {
+    text-decoration: none;
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+
 :root {
   --text: #fff;
   --text-o: #c74121;
@@ -7,8 +9,9 @@
   --bg-w: #dbd7cf;
   --bg-g: #737471;
   
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: 'Libre Baskerville', Roboto, sans-serif;
+  --heading: 'Bodoni Moda', sans-serif;
+  --roboto: 'Roboto', sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
