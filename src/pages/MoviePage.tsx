@@ -2,7 +2,6 @@ import { Link, useParams } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import './MoviePage.css';
 import { useFetch } from "../hooks/useFetch";
-import Footer from "../components/Footer"
 
 const MoviePage = () => {
     const { movieId } = useParams()
@@ -51,7 +50,7 @@ const MoviePage = () => {
                             <div className="rating-bubble bubble sharp">
                                 <p className="rating">{movieData.vote_average === 0 ? (<p>not rated</p>) : (
 
-                                    <span>{movieData.vote_average}<span>/10</span></span>
+                                    <span>{movieData.vote_average.toFixed(1)}<span>/10</span></span>
                                     
                                 ) }</p>
                             </div>
