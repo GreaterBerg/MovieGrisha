@@ -16,12 +16,12 @@ nav {
 }
 
 .logo {
-    background-color: var(--bg-w);
+    background-color: var(--bg-section);
     border-radius: .5rem;
     text-align: center;
     font-size: .9rem;
     padding: .3rem 1rem;
-    color: var(--bg-g);
+    color: var(--text);
     text-decoration: none;
     font-weight: 400;
     transition: all .15s ease 0s;
@@ -34,6 +34,7 @@ nav {
 .item {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: .4rem;
     text-align: center;
     width: 10rem;

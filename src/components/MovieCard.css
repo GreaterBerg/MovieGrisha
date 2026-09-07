@@ -17,11 +17,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 70%;
+    height: 100%;
     background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0) 100%
+    rgba(199, 65, 33, 0.8) 0%,
+    rgba(199, 65, 33, 0) 100%
     );
     opacity: 0;
     transform: translateY(20px);

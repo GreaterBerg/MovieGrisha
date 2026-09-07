@@ -50,7 +50,7 @@ const MoviePage = () => {
                             <div className="rating-bubble bubble sharp">
                                 <p className="rating">{movieData.vote_average === 0 ? (<p>not rated</p>) : (
 
-                                    <span>{movieData.vote_average.toFixed(1)}<span>/10</span></span>
+                                    <span>{movieData?.vote_average?.toFixed(1)}<span>/10</span></span>
                                     
                                 ) }</p>
                             </div>
