@@ -23,4 +23,5 @@
     margin: 1rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }

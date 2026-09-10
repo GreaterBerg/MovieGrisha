@@ -6,6 +6,7 @@ section {
 .section-list {
     margin: 1rem;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
