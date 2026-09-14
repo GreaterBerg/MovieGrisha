@@ -1,10 +1,16 @@
 
 .player-container {
+    border: 3px solid var(--bg-w);
+    background-color: var(--bg-g);
     width: 60rem;
     margin: 1rem auto;
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 1rem 1rem var(--text-b);
+    transition: all .2s ease 0s;
+}
+.player-container:hover{
+    border: 3px solid var(--bg-section);
 }
 
 .info-text {
