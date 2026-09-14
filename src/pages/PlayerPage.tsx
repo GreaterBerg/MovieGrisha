@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import MoviePlayer from "../components/MoviePlayer";
 import { useParams } from "react-router-dom";
 import BackButton from "../components/BackButton";
+import './PlayerPage.css';
+import { Underline } from "lucide-react";
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
@@ -37,6 +39,7 @@ const PlayerPage = () => {
 
     const [errorMessage, setErrorMessage] = useState('');
     const [movieImdb, setMovieImdb] = useState([]);
+    const [movieData, setMovieData] = useState();
     const [isLoading, setIsLoading] = useState(false);
 
     const fetchMovies = async () => {
@@ -62,6 +65,7 @@ const PlayerPage = () => {
             }
 
             setMovieImdb(data.imdb_id)
+            setMovieData(data)
             console.log(data)
         }
         catch(error) {
@@ -79,13 +83,20 @@ const PlayerPage = () => {
     return (
         <>
             {isLoading ? (
-                <p className="loading-text">Loading...</p>
+                <p className="loading-text">Player is loading, please wait...</p>
             ) : errorMessage ? (
                 <p className="error-text">{errorMessage}</p>
             ) : (
                 <>
-                    <MoviePlayer movieImdbId={movieImdb} />
                     <BackButton isLink={true} linkPath={`/movie/${movieId}/`}/>
+                    <div className="description-container">
+                        <h1 className="title">{movieData?.title}</h1>
+                        <p>{movieData?.tagline}</p>
+                    </div>
+                    <div className="player-container">
+                        <MoviePlayer movieImdbId={movieImdb} />
+                    </div>
+                    <p className="info-text">If player didn't show, please <span style={{borderBottom: "1px solid var(--text)"}}>refresh</span> the page.</p>
                 </>
             )}
             

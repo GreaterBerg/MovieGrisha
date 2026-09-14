@@ -1,0 +1,21 @@
+
+.player-container {
+    width: 60rem;
+    margin: 1rem auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem var(--text-b);
+}
+
+.info-text {
+    margin: 1rem;
+    text-align: center;
+}
+
+.description-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

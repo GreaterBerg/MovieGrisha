@@ -23,7 +23,7 @@ const MoviePlayer = ({ movieImdbId }) => {
     }, [movieImdbId]);
 
     return (
-        <div ref={hostRef} />
+        <div ref={hostRef}/>
     );
 };
 
