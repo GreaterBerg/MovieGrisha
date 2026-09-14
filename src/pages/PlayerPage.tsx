@@ -90,7 +90,7 @@ const PlayerPage = () => {
                 <>
                     <BackButton isLink={true} linkPath={`/movie/${movieId}/`}/>
                     <div className="description-container">
-                        <h1 className="title">{movieData?.title}</h1>
+                        <h1 className="title">{movieData?.title} ({movieData?.release_date.slice(0,4)})</h1>
                         <p>{movieData?.tagline}</p>
                     </div>
                     <div className="player-container">
