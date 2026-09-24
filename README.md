@@ -34,6 +34,9 @@ The project was created to practice building a frontend application from scratch
 * Node.js
 * npm
 
+<img width="1393" height="861" alt="image" src="https://github.com/user-attachments/assets/bba8a66e-3d9c-464e-b12a-11a473013b1a" />
+
+
 ### Installation
 
 ```bash
