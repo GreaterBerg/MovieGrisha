@@ -1,4 +1,5 @@
 # MovieGrisha
+<img width="1247" height="854" alt="image" src="https://github.com/user-attachments/assets/84763350-aef2-4ee6-a122-9cf6b9619bc1" />
 
 A simple movie discovery web application built with React and TypeScript.
 
